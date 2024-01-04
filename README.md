@@ -1,4 +1,4 @@
-# README for Quaternion Rotation Visualization
+# Quaternion Rotation Visualization
 
 This program demonstrates a 3D visualization of quaternion rotation using OpenGL. The rotation is applied to a wireframe teapot, and the user can interactively change the viewing angle and teapot position.
 
