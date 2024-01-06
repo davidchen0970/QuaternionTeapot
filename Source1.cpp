@@ -81,16 +81,6 @@ public:
 		}
 	}
 
-	// Rotate a given point using the Quaternion
-	Vertex3f rotationToPosition(Vertex3f p) {
-		Quaternion q = normalize();
-		Vertex3f out(0, 0, 0);
-		out.x = (1 - 2 * q.y * q.y - 2 * q.z * q.z) * p.x + (2 * q.x * q.y - 2 * q.w * q.z) * p.y + (2 * q.x * q.z + 2 * q.w * q.y) * p.z;
-		out.y = (2 * q.x * q.y + 2 * q.w * q.z) * p.x + (1 - 2 * q.x * q.x - 2 * q.z * q.z) * p.y + (2 * q.y * q.z - 2 * q.w * q.x) * p.z;
-		out.z = (2 * q.x * q.z - 2 * q.w * q.y) * p.x + (2 * q.y * q.z + 2 * q.w * q.x) * p.y + (1 - 2 * q.x * q.x - 2 * q.y * q.y) * p.z;
-		return out;
-	}
-
 	// Friend function for overloading << operator
 	friend std::ostream& operator<<(std::ostream& os, const Quaternion& quat) {
 		os << "(" << quat.w << ", " << quat.x << ", " << quat.y << ", " << quat.z << ")";
