@@ -9,6 +9,26 @@ Ensure that you have the following dependencies installed:
 - OpenGL
 - GLUT (OpenGL Utility Toolkit)
 
+## Installation
+
+To install the necessary OpenGL and GLUT libraries, follow these steps:
+
+1. **Open Visual Studio**
+   - Launch Visual Studio.
+
+2. **Open NuGet Package Manager**
+   - In the Visual Studio toolbar, click on `Tools`.
+
+3. **Open Package Manager Console**
+   - From the dropdown menu, select `NuGet Package Manager`.
+   - Then choose `Package Manager Console` from the submenu.
+
+4. **Install OpenGL and GLUT**
+   - In the Package Manager Console, type the following command and press Enter:
+     ```
+     Install-Package nupengl.core
+     ```
+
 ## Usage
 
 Once the program is running, you can interact with the visualization using the following keyboard controls:
